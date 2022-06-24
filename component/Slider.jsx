@@ -5,9 +5,9 @@ import { useState } from "react";
 const Slider = () => {
     const [index, setIndex] = useState(0);
   const images = [
-    "/img/featured.png",
-    "/img/featured2.png",
-    "/img/featured3.png",
+    "/img/slider1.png",
+    "/img/slider2.png",
+    "/img/slider3.png",
   ];
 
   const handleArrow = (direction) =>{
