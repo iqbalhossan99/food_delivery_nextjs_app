@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Footer from "../component/Footer";
 import PizzaList from "../component/PizzaList";
 import Slider from "../component/Slider";
 import styles from "../styles/Home.module.css";
@@ -13,6 +14,7 @@ export default function Home() {
       </Head>
       <Slider />
       <PizzaList />
+      <Footer />
     </div>
   );
 }
