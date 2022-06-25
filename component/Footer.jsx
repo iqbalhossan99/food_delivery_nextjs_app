@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "../styles/Footer.module.css";
 
 const Footer = () => {
@@ -19,12 +20,33 @@ const Footer = () => {
         <div className={styles.card}>
           <h1 className={styles.title}> QUICK LINKS</h1>
           <ul className={styles.list}>
-          <li className={styles.listItem}>Homepage</li>
-          <li className={styles.listItem}>Products</li>
-          <li className={styles.listItem}>Menu</li>
-          <li className={styles.listItem}>Events</li>
-          <li className={styles.listItem}>Blog</li>
-          <li className={styles.listItem}>Contact</li>
+          <li className={styles.listItem}>
+            <Link
+              href={`/`}
+            >
+              <a>Home</a>
+            </Link>        
+          </li>
+          <li className={styles.listItem}>
+            <Link href={`/products`}>
+              <a>Products</a>
+            </Link>
+          </li>
+          <li className={styles.listItem}>
+            <Link href={`/events`}>
+              <a>Events</a>
+            </Link>
+          </li>
+          <li className={styles.listItem}>
+            <Link href={`/blogs`}>
+              <a>Blogs</a>
+            </Link>
+          </li>
+          <li className={styles.listItem}>
+            <Link href={`/contact`}>
+              <a>Contact</a>
+            </Link>
+          </li>
         </ul>
         </div>
         <div className={styles.card}>
